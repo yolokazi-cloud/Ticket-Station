@@ -113,14 +113,6 @@ displayEvents();
 
 // SEARCH
 
-/* const searchInput = document.getElementById('search-input');
-
-searchInput.addEventListener('submit', e => {
-    e.preventDefault();
-    let value = e.target.value;
-    console.log(value);
-}); */
-
 function searchEvent() {
     const searchInput = document.getElementById('search-input').value;
     let elements = document.querySelectorAll(".event-name");
