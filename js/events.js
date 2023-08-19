@@ -131,22 +131,3 @@ function searchEvent() {
         }
       })
 }
-
-/* function searchEvent() {
-    let elements = document.querySelectorAll(".event-name");
-    let cards = document.querySelectorAll(".event-card");
-    const searchInput = document.getElementById('form-control').value;
-    console.log(searchInput)
-  
-    //loop through all elements
-    elements.forEach((element, index) => {
-      // check if elements include the input value
-      if (element.innerText.includes(searchInput.toLowerCase())) {
-        // display matching card
-        cards[index].classList.remove("hide");
-      }else{
-        //hide the others
-        cards[index].classList.add("hide");
-      }
-    })
-  } */
