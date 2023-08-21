@@ -4,6 +4,304 @@
 	Add all your Custom Styled CSS here for New Styles or
 	Overwriting Default Theme Styles for Better Handling Updates
 -----------------------------------------------------------------*/
-select.noAppearance{-webkit-appearance:none;}
+select.noAppearance {
+  -webkit-appearance: none;
+}
 
+.basket {
+  position: relative;
+  margin-top: -22px;
+  border-radius: 20%;
+  padding-top: 15px;
+}
 
+.quantity {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20px;
+  right: -160%;
+  padding-bottom: 72%;
+  color: white;
+  background: #000;
+}
+
+.cart {
+  width: 20px;
+  object-fit: contain;
+  margin-right: 0px;
+}
+
+/* SIDE CART */
+.side-cart {
+  position: fixed;
+  height: 100;
+  width: 350px;
+  top: 0;
+  right: 0;
+  backdrop-filter: blur(10px);
+  background-color: #2f2f2f92;
+  transform: translateX(110%);
+  transition: transform 0.5s ease-in-out;
+  margin-top: 100px;
+  z-index: 50;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: white;
+}
+
+.cart-title {
+  color: white;
+}
+
+.side-cart.open {
+  transform: translateX(0);
+}
+
+.cart-content {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+}
+
+.cart-header {
+  padding: 10px;
+  border-bottom: 1px solid var(--black-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  position: relative;
+  color: white;
+}
+
+.item-count {
+  position: absolute;
+  top: 5px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-btn {
+  font-size: 16px;
+  font-weight: bolder;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.close-btn:hover {
+  color: var(--primary-color);
+  transform: scale(1.2);
+}
+
+.cart-items {
+  flex: 1;
+  overflow-x: hidden;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.unit-price h4 {
+  font-size: 16px;
+}
+
+.units {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.units .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.units .number {
+  padding: 0 15px;
+}
+
+.remove-item {
+  display: flex;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.item-info img {
+  width: 75px;
+}
+
+.cart-buttons {
+  padding: 30px 20px;
+  border-top: 1px solid var(--black-color);
+}
+
+.checkout-btn {
+  border: none;
+  width: 100%;
+  background-color: var(--black-color);
+  color: var(--grey-color);
+  border-radius: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.checkout-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--black-color);
+}
+
+/* CHECKOUT MODAL */
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(10px);
+  background-color: #2f2f2f92;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.pay-btn {
+  font-size: 16px;
+  font-weight: bolder;
+  color: #2f2f2f92;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 120px;
+}
+
+.modal-content {
+  color: white;
+}
+
+.summary {
+  color: white;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 80%;
+  }
+}
+
+@media (min-width: 769px) {
+  .modal-content {
+    width: 40%;
+  }
+}
+
+/* UPCOMING EVENTS */
+
+.upcoming-events {
+  padding: 20px;
+}
+
+.upcoming-events h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: "Sedgwick Ave", cursive;
+}
+
+.event-details {
+  position: absolute;
+  z-index: 20;
+  top: 5;
+  background-color: #010710bb;
+  width: 94%;
+  height: 93%;
+  border-radius: 10px;
+}
+
+.buy {
+  backdrop-filter: blur(5px);
+  width: 150px;
+  border-radius: 8px;
+  height: 30px;
+  color: white;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.buy-cart {
+  width: 20px;
+  object-fit: contain;
+}
+
+/* STORE */
+
+.store {
+  padding: 20px;
+}
+
+.store-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.store-details {
+  position: absolute;
+  z-index: 20;
+  margin-top: 60%;
+  background-color: #ffffff54;
+  width: 94%;
+  height: 25%;
+  border-radius: 10px;
+  color: black;
+}
+
+.hide {
+  display: none;
+}

@@ -91,6 +91,16 @@
 						<input type="text" name="q" onclick="searchEvent()" id="search-input" class="form-control" value="" placeholder="Type &amp; Enter.." autocomplete="off">						
 					</form>
 
+					<div class="basket">
+						<div
+						  class="quantity total-items-in-cart"
+						  id="cartItemCount item-number"
+						>
+						  0
+						</div>
+						<img src="./images/cart.png" alt="" class="cart open-cart-btn" />
+					  </div>
+
 				</div>
 			</div>
 		</div>
@@ -108,6 +118,76 @@
 			</div>
 		</div>
 	</section>
+
+
+	 <!-- SIDE CART -->
+	 <div class="side-cart">
+        <div class="cart-content">
+          <div class="cart-header">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <div class="header-title">
+              <h2 class="cart-title">Your Cart</h2>
+            </div>
+            <button class="close-btn">Close</button>
+          </div>
+          <div class="cart-items"></div>
+          <div class="cart-buttons">
+            <div class="sub-total">
+              <p class="subtotal"></p>
+              <button class="checkout-btn">Checkout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHECKOUT MODAL -->
+      <div class="modal" id="paymentModal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <h2 class="summary">Payment Summary</h2>
+          <p>Subtotal: <span id="modalSubtotal"></span></p>
+
+          <!-- PAYFAST GATEWAY -->
+          <form
+            name="PayFastPayNowForm"
+            action="https://sandbox.payfast.co.za​/eng/process"
+            method="post"
+          >
+            <input type="hidden" name="merchant_id" value="10000100" />
+            <input type="hidden" name="merchant_key" value="46f0cd694581a" />
+            <input type="hidden" name="amount" id="paymentStatus" />
+            <input type="hidden" name="item_name" value="Test Product" />
+            <!--      THESE CAN BE CUSTOMIZED AS WE WANT
+                  <input type="hidden" name="return_url" value="index.html">
+                  <input type="hidden" name="cancel_url" value="index.html">
+                  <input type="hidden" name="notify_url" value="index.html"> -->
+
+            <input type="submit" class="pay-btn" />
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <!-- UPCOMING EVENTS -->
+
+    <section class="upcoming-events">
+      
+      <div class="event-grid">
+        <!-- Events displaying here -->
+      </div>
+    </section>
+    <br />
+
+    <!-- STORE -->
+    <section class="store">
+      <h2>Store</h2>
+    
+      <div class="store-grid">
+        <!-- Store items displaying here -->
+      </div>
+    </section>
+
+
     <!-- Footer
 	============================================= -->
 	<footer id="footer" class="dark" >
