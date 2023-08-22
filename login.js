@@ -9,7 +9,6 @@ class User {
 document.getElementById("signInForm").addEventListener("submit", function(event) {
   event.preventDefault(); 
 
-
   const usernameInput = document.querySelector('input[name="txt"]');
   const emailInput = document.querySelector('input[name="email"]');
   const passwordInput = document.querySelector('input[name="pswd"]');
@@ -17,7 +16,7 @@ document.getElementById("signInForm").addEventListener("submit", function(event)
   const email = emailInput.value;
   const password = passwordInput.value;
 
- 
+  //login validation
   if (username.trim() === '' || email.trim() === '' || password.trim() === '') {
     alert('Please enter all required fields.');
     return;
@@ -30,7 +29,7 @@ document.getElementById("signInForm").addEventListener("submit", function(event)
   }
 
   if (!isPasswordValid(password)) {
-    alert('Password should have at least 4 characters,and a number');
+    alert('Password should have at least 4 characters, and a number');
     return;
   }
 
@@ -39,9 +38,10 @@ document.getElementById("signInForm").addEventListener("submit", function(event)
 
   sessionStorage.setItem('user', JSON.stringify(user));
 
+  window.location.href = "home.html";
 
-  window.location.href = "Events.html";
 });
+
 
 function isValidEmail(email) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -53,3 +53,5 @@ function isPasswordValid(password){
    const passwordRegex = /^(?=.*[a-z])(?=.*\d).{4,}$/;
   return passwordRegex.test(password);
 }
+
+

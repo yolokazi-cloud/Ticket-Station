@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US">
+<html lang="en">
 <head>
-
-	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<meta http-equiv="x-ua-compatible" content="IE=edge">
 	<meta name="author" content="SemiColonWeb">
 	<meta name="description" content="Get Canvas to build powerful websites easily with the Highly Customizable &amp; Best Selling Bootstrap Template, today.">
@@ -26,6 +27,10 @@
 	<!-- Niche Demos -->
 	<link rel="stylesheet" href="gym/gym.css">
 	<link rel="stylesheet" href="yoga/yoga.css">
+  
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="law-firm/law-firm.css">
 
 	<link rel="stylesheet" href="css/custom.css">		
 	<!-- Font Imports -->
@@ -33,28 +38,11 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!-- Document Title
-	============================================= -->
-	<title>Ticket Station</title>
-
-	<style>
-		.tp-caption.Gym-Display,
-		.Gym-Display { font-family: 'Poppins', sans-serif; }
-
-		.tp-caption.Gym-Display.font-secondary,
-		.Gym-Display.font-secondary { font-family: 'Playfair Display', Serif; }
-	</style>
-	
-		
-	
+    <title>Landing Page</title>
 </head>
 <body class="stretched">
-
-<!-- Document Wrapper -->
-<div id="wrapper">
-
-	<!-- Header-->
+    <div id="wrapper">
+        <!-- Header-->
 	<header id="header" class="full-header transparent-header dark" data-sticky-class="not-dark" data-responsive-class="not-dark">
 		<div id="header-wrap">
 			<div class="container">
@@ -64,7 +52,7 @@
 					============================================= -->
 					<div id="logo" class="me-lg-0 border-end-0">
 						<a href="demo-gym.html">
-							<h1 class="mt-2" style="color: gray;">Ticket Station</h1>
+							<h1 class="mt-2" style="color: gray;">FaveReet</h1>
 						</a>
 					</div><!-- #logo end -->
 
@@ -72,8 +60,9 @@
 
 						<!-- Top Search
 						============================================= -->
-						<div id="top-search" class="header-misc-icon d-flex " >
-
+						<div id="top-search" class="loginbtn " >
+				
+							<a href="login.html" class="loginbtn">Login</a>
 						</div><!-- #top-search end -->
 
 					</div>
@@ -88,14 +77,9 @@
 					<nav class="primary-menu">
 
 						<ul class="menu-container border-end-0">
-							<li class="menu-item current"><a class="menu-link" href="index.html"><div>Home</div></a></li>
-							<li class="menu-item"><a class="menu-link" href="login.html"><div>Login</div></a>
-								<ul class="sub-menu-container" data-class="up-lg:not-dark">
-									<li class="current menu-item"><a class="menu-link" href="login.html"><div>login</div></a></li>
-
-								</ul>
-							</li>
-
+							<li class="menu-item"><a class="menu-link" href="index.html"><div>Home</div></a></li>
+							<li class="menu-item"><a class="menu-link" href="#about"><div>About</div></a></li>
+							<li class="menu-item"><a class="menu-link" href="#contact"><div>Contact</div></a></li>
 						</ul>
 					</nav>
 
@@ -110,7 +94,7 @@
 		<div class="header-wrap-clone"></div>
 	</header><!-- #header end -->
 
-	<!--Hero section-->
+   <!--Hero section-->
 	<section id="slider" class="slider-element swiper_wrapper min-vh-60 min-vh-md-100 include-header" data-loop="true">
 		<div class="slider-inner">
 			<div class="swiper-container swiper-parent">
@@ -120,23 +104,15 @@
 							<div class="slider-caption slider-caption-center">
 								<div>
 									<h2>FaveReet Ticket Station</h2>
-									<p class="categories-lists">Choose Event. Pick a Ticket. We Get You In.</p>
+									<p class="categories-lists">We provide you with the platform to book your event ticket, <br> change it or even cancel it at just a click of the button</p>
 									<a href="login.html" class="button button-rounded button-large text-transform-none mt-4">Get Started</a>
 								</div>
 							</div>
 						</div>
-						<div class="video-wrap no-placeholder" data-bottom-top="transform: translate(0%, -30%)" data-top-bottom="transform: translate(0%, 30%)">
-							<video poster="images/eventspichome.png" preload="auto" loop autoplay muted playsinline>
-								<source	src="images/event-home.mp4"   type="video/mp4">
-							</video>
-							<div class="video-overlay" style="background: rgba(0,0,0,.1);"></div>
-						</div>
+						<div class="swiper-slide-bg" style="background:linear-gradient(0deg, rgba(36, 36, 36, 0.54),rgba(30, 29, 30, 0.69)), url('images/hero-index.jpg') no-repeat left top; padding: 100px 0; background-size: 100% 100%; margin-top:-10%;"></div>
 					</div>
 				</div>
-				<!-- Slider Arrows
-				============================================= -->
-				<div class="slider-arrow-left bg-transparent"><i class="bi-arrow-left"></i></div>
-				<div class="slider-arrow-right bg-transparent"><i class="bi-arrow-right"></i></div>
+			
 			</div>
 
 			<!-- Slider Mouse Icon
@@ -144,259 +120,124 @@
 			<a href="#" class="scroll-down d-none d-lg-block" data-scrollto="#content" data-offset="80">
 				<span class="scroll-mouse"><span class="scroll-wheel"></span></span>
 			</a>
-
 		</div>
+	
+		<!--about section-->
+        </section>
+        <section id="about">
+            <div class="row align-items-center justify-content-center mt-6 mt-lg-0 mb-4">
+                <div class="col-lg-5 col-10 px-5">
+                    <div class="lady-justice-img position-relative">
+                        <img src="images/about2.jpg" alt="Image" class="rounded">
+                    </div>
+                </div>
+                <div class="col-lg-5 p-5">
+                    <i class="material-symbols-outlined display-4  mb-3" style="color:#7E9680">verified</i>
+                    <h2 class="h1 fw-bold lh-sm">Our Purpose is provide Quality Services</h2>
+                    <h4 class="mt-4 fw-normal lh-base" style="line-height: 1.75 !important;">At FaveReet Ticket Station, our mission is simple yet impactful: to empower you to explore and immerse yourself in the vibrant world of events, concerts, sports, and cultural spectacles. We believe that every event is an opportunity to create memories, forge connections, and celebrate life's moments. </h4>
 
-	</section>
-		
-    
-	<!--Calendar with js to set date properly-->
-	<div class="section section-schedule" style="background:linear-gradient(0deg, rgba(116, 115, 115, 0.54),rgba(59, 58, 59, 0.69)), url('images/calendar.jpg') no-repeat left top; padding: 100px 0; background-size: 100% 100%; margin-top:-10%;">
-		<div class="container">
-			<div class="heading-block border-bottom-0 mb-6" style="max-width: 700px">
-				<h2 class="fw-bold mb-2 text-transform-none" style="font-size: 42px; letter-spacing: -1px; color: white;">Events Schedule.</h2>
-				<p class="lead" style="color: white;">Plan your event attendance in time. With the events calendar, know all the events ahead of time</p>
-			</div>
-			<div class="row justify-content-between">
-				<div class="col-lg-4 col-md-5 mt-4 mt-md-0 sticky-sidebar-wrap">
-					<div class="sticky-sidebar">
-						<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-							<a class="nav-link active" id="sc-mon-tab" data-bs-toggle="pill" href="#sc-mon" role="tab" aria-controls="sc-mon" aria-selected="true">Monday</a>
-							<a class="nav-link" id="sc-tue-tab" data-bs-toggle="pill" href="#sc-tue" role="tab" aria-controls="sc-tue" aria-selected="false">Tuesday</a>
-							<a class="nav-link" id="sc-wed-tab" data-bs-toggle="pill" href="#sc-wed" role="tab" aria-controls="sc-wed" aria-selected="false">Wednesday</a>
-							<a class="nav-link" id="sc-thu-tab" data-bs-toggle="pill" href="#sc-thu" role="tab" aria-controls="sc-thu" aria-selected="false">Thursday</a>
-							<a class="nav-link" id="sc-fri-tab" data-bs-toggle="pill" href="#sc-fri" role="tab" aria-controls="sc-fri" aria-selected="false">Friday</a>
-							<a class="nav-link" id="sc-sat-tab" data-bs-toggle="pill" href="#sc-sat" role="tab" aria-controls="sc-sat" aria-selected="false">Saturday</a>
-							<a class="nav-link mb-0" id="sc-sun-tab" data-bs-toggle="pill" href="#sc-sun" role="tab" aria-controls="sc-sun" aria-selected="false">Sunday</a>
+                    <h4 class="mt-4 fw-normal lh-base" style="line-height: 1.75 !important;">Our platform is designed to make accessing these experiences effortless, seamless, and exciting.</h4>
+                    <a href="register.html" class="button button-rounded button-large text-transform-none mt-4">Register Now</a> </div>
+            </div>
+        </section>
+
+		<!--contact-->
+        <section id="contact" style="margin-top: 10%; margin-bottom: -10%;">
+			<div class="content-wrap ">
+				<div class="section section-contact my-0" style="background: #ECEEED; padding: 100px 0;">
+					<div class="container">
+						<div class="row gutter-50">
+							<div class="col-xl-4 col-md-4">
+								<h2 class="h2 mb-4 fw-semibold">Contact Us</h2>
+								<p class="text-black-50">We always want to hear from you, send us a message for any suggestions or queries.</p>
+								<a href="mailto:no.reply@semicolonweb.com" class="button button-rounded ms-0">Email Us</a>
+							</div>
+
+							<div class="col-xl-3 col-md-4">
+								<div class="form-widget">
+
+									<div class="form-result"></div>
+
+									<form class="mb-0" id="template-contactform" name="template-contactform" action="include/form.php" method="post">
+
+										<div class="form-process">
+											<div class="css3-spinner">
+												<div class="css3-spinner-scaler"></div>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-12 form-group">
+												<label for="template-contactform-name">Name <small>*</small></label>
+												<input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="form-control required">
+											</div>
+
+											<div class="col-12 form-group">
+												<label for="template-contactform-email">Email <small>*</small></label>
+												<input type="email" id="template-contactform-email" name="template-contactform-email" value="" class="required email form-control">
+											</div>
+
+											<div class="col-12 form-group">
+												<label for="template-contactform-message">Message <small>*</small></label>
+												<textarea class="required form-control" id="template-contactform-message" name="template-contactform-message" rows="4" cols="30"></textarea>
+											</div>
+
+											<div class="col-12 form-group d-none">
+												<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="form-control">
+											</div>
+
+											<div class="col-12 form-group text-end">
+												<button class="button button-rounded button-small m-0" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Send Message</button>
+											</div>
+										</div>
+
+										<input type="hidden" name="prefix" value="template-contactform-">
+
+									</form>
+								</div>
+							</div>
+
+							<div class="col-xl-3 col-md-4">
+								<div class="feature-box fbox-plain mb-4 fbox-sm">
+									<div class="fbox-icon mt-1">
+										<i class="bi-geo-alt"></i>
+									</div>
+									<div class="fbox-content">
+										<h3 class="fw-normal text-transform-none mb-2">Address</h3>
+										<address class="font-body text-black-50 mb-0">
+											61 Oak Road, Park Town<br>
+											Johannesburg, 2001<br>
+										</address>
+									</div>
+								</div>
+								<div class="feature-box fbox-plain mb-4 fbox-sm">
+									<div class="fbox-icon mt-1">
+										<i class="bi-telephone-outbound"></i>
+									</div>
+									<div class="fbox-content">
+										<h3 class="fw-normal text-transform-none mb-2">Call:</h3>
+										<a href="tel:+01273123456">+27-(011)-6541-6369 </a>
+									</div>
+								</div>
+								<div class="feature-box fbox-plain mb-4 fbox-sm">
+									<div class="fbox-icon mt-1">
+										<i class="bi-envelope"></i>
+									</div>
+									<div class="fbox-content">
+										<h3 class="fw-normal text-transform-none mb-2">Mail:</h3>
+										<a href="mailto:no.reply@semicolonweb.com">reply@favereet.com</a>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-7 mt-5 mt-md-0">
-					<h5 id="week-details" class="font-body fw-bold text-white-50 d-inline-block">Date</h5><span class="text-white-50 fw-bold" style="color: white;"> (Monday - Sunday)</span>
-					<div class="tab-content" id="v-pills-tabContent">
-						<div class="tab-pane schedule-wrap fade show active" id="sc-mon" role="tabpanel" aria-labelledby="sc-mon-tab">
-							<dl class="row g-0 table mb-0">
-
-								<dt class="col-sm-3"><div class="schedule-time font-primary">07:00 am</div></dt>
-								<dd class="col-sm-9 d-flex justify-content-between align-items-center">
-									<div class="schedule-desc font-primary">Unplugged Acoustic<small>- John Legend</small></div>
-									<a href="#"><img src="images/john.jpg" alt="" class="schedule-teacher"></a>
-								</dd>
-								<dt class="col-sm-3"><div class="schedule-time font-primary">07:00 pm</div></dt>
-								<dd class="col-sm-9 d-flex justify-content-between align-items-center">
-									<div class="schedule-desc font-primary">Music Lounge<small>- Musiq SoulChild</small></div>
-									<a href="#"><img src="images/musiq.jpg" alt="" class="schedule-teacher"></a>
-								</dd>
-
-								<dt class="col-sm-3"><div class="schedule-time font-primary">06:00 pm</div></dt>
-								<dd class="col-sm-9 d-flex justify-content-between align-items-center">
-									<div class="schedule-desc font-primary">Bridgerton: Queen Charlotte<small>- Shondaland</small></div>
-									<a href="#"><img src="images/john.jpg" alt="" class="schedule-teacher"></a>
-								</dd>
-
-							</dl>
-						</div>
-
-						<div class="tab-pane schedule-wrap fade" id="sc-tue" role="tabpanel" aria-labelledby="sc-tue-tab">
-							<dl class="row table mb-0">
-
-								<dt class="col-sm-3"><div class="schedule-time font-primary">09.00 am</div></dt>
-								<dd class="col-sm-9 d-flex justify-content-between align-items-center">
-									<div class="schedule-desc font-primary">Adventure retreat in Amazon Forest<small>- Amazon</small></div>
-									<a href="#"><img src="images/amazon.jpg" alt="" class="schedule-teacher"></a>
-								</dd>
-
-								<dt class="col-sm-3"><div class="schedule-time font-primary">10.00 am</div></dt>
-								<dd class="col-sm-9 d-flex justify-content-between align-items-center">
-									<div class="schedule-desc font-primary">The Lion King Premiere<small>- John Kani</small></div>
-									<a href="#"><img src="images/johnkani.jpg" alt="" class="schedule-teacher"></a>
-								</dd>
-
-							</dl>
-						</div>
-
-						<div class="tab-pane schedule-wrap fade" id="sc-wed" role="tabpanel" aria-labelledby="sc-wed-tab">
-							<dl class="row table mb-0">
-
-								<dt class="col-sm-3"><div class="schedule-time font-primary">8:30 am</div></dt>
-								<dd class="col-sm-9 d-flex justify-content-between align-items-center">
-									<div class="schedule-desc font-primary">Dance concert<small>- Carnival Presents</small></div>
-									<a href="#"><img src="images/dance.jpg" alt="" class="schedule-teacher"></a>
-								</dd>
-
-								<dt class="col-sm-3"><div class="schedule-time font-primary">9.00 am</div></dt>
-								<dd class="col-sm-9 d-flex justify-content-between align-items-center">
-									<div class="schedule-desc font-primary">Art of war Book Signing<small>- Thodore Hanle</small></div>
-									<a href="#"><img src="images/booksign.jfif" alt="" class="schedule-teacher"></a>
-								</dd>
-
-								<dt class="col-sm-3"><div class="schedule-time font-primary">2.30 pm</div></dt>
-								<dd class="col-sm-9 d-flex justify-content-between align-items-center">
-									<div class="schedule-desc font-primary">Bridgerton Premier Launch<small>- Shonda Rhimes</small></div>
-									<a href="#"><img src="images/bridge.jpg" alt="" class="schedule-teacher"></a>
-								</dd>
-
-							</dl>
-						</div>
-
-						<div class="tab-pane schedule-wrap fade" id="sc-thu" role="tabpanel" aria-labelledby="sc-thu-tab">
-							<dl class="row table mb-0">
-
-								<dt class="col-sm-3"><div class="schedule-time font-primary">10.00 am</div></dt>
-								<dd class="col-sm-9 d-flex justify-content-between align-items-center">
-									<div class="schedule-desc font-primary">idols live<small>- Dstv</small></div>
-									<a href="#"><img src="images/idols.jpg" alt="" class="schedule-teacher"></a>
-								</dd>
-
-								<dt class="col-sm-3"><div class="schedule-time font-primary">12.30 pm</div></dt>
-								<dd class="col-sm-9 d-flex justify-content-between align-items-center">
-									<div class="schedule-desc font-primary">Digital Marketing Summit<small>- Experts</small></div>
-									<a href="#"><img src="images/convention.jpg" alt="" class="schedule-teacher"></a>
-								</dd>
-							</dl>
-						</div>
-						<div class="tab-pane schedule-wrap fade" id="sc-fri" role="tabpanel" aria-labelledby="sc-fri-tab">
-							<dl class="row table mb-0">
-
-								<dt class="col-sm-3"><div class="schedule-time font-primary">9.00 am</div></dt>
-								<dd class="col-sm-9 d-flex justify-content-between align-items-center">
-									<div class="schedule-desc font-primary">History Art Site Seeing<small>- Vicky Napoleon</small></div>
-									<a href="#"><img src="images/history.jpg" alt="" class="schedule-teacher"></a>
-								</dd>
-
-								<dt class="col-sm-3"><div class="schedule-time font-primary">10.00 am</div></dt>
-								<dd class="col-sm-9 d-flex justify-content-between align-items-center">
-									<div class="schedule-desc font-primary">Mountain Hiking<small>- Norman Givens</small></div>
-									<a href="#"><img src="images/mountain.jfif" alt="" class="schedule-teacher"></a>
-								</dd>
-
-								<dt class="col-sm-3"><div class="schedule-time font-primary">2.30 pm</div></dt>
-								<dd class="col-sm-9 d-flex justify-content-between align-items-center">
-									<div class="schedule-desc font-primary">Huawei Summer Office Launch <small>- Ruth Sihi</small></div>
-									<a href="#"><img src="images/huawei.jpg" alt="" class="schedule-teacher"></a>
-								</dd>
-
-							</dl>
-						</div>
-
-						<div class="tab-pane schedule-wrap fade" id="sc-sat" role="tabpanel" aria-labelledby="sc-sat-tab">
-							<dl class="row table mb-0">
-
-								<dt class="col-sm-3"><div class="schedule-time font-primary">7.20 am</div></dt>
-								<dd class="col-sm-9 d-flex justify-content-between align-items-center">
-									<div class="schedule-desc font-primary">Convention<small>- Norman Gordon</small></div>
-									<a href="#"><img src="images/convention.jpg" alt="" class="schedule-teacher"></a>
-								</dd>
-
-								<dt class="col-sm-3"><div class="schedule-time font-primary">8:30 am</div></dt>
-								<dd class="col-sm-9 d-flex justify-content-between align-items-center">
-									<div class="schedule-desc font-primary">Choir Singing Event<small>- University of WorldWide Creativity</small></div>
-									<a href="#"><img src="images/concert.jfif" alt="" class="schedule-teacher"></a>
-								</dd>
-
-								<dt class="col-sm-3"><div class="schedule-time font-primary">9.00 am</div></dt>
-								<dd class="col-sm-9 d-flex justify-content-between align-items-center">
-									<div class="schedule-desc font-primary">Auction<small>- Ford</small></div>
-									<a href="#"><img src="images/amazon.jpg" alt="" class="schedule-teacher"></a>
-								</dd>
-
-								<dt class="col-sm-3"><div class="schedule-time font-primary">10.00 am</div></dt>
-								<dd class="col-sm-9 d-flex justify-content-between align-items-center">
-									<div class="schedule-desc font-primary">Women today in tech Heckathon<small>- ShiCode</small></div>
-									<a href="#"><img src="images/huawei.jpg" alt="" class="schedule-teacher"></a>
-								</dd>
-							</dl>
-						</div>
-						<div class="tab-pane schedule-wrap fade" id="sc-sun" role="tabpanel" aria-labelledby="sc-sun-tab">
-							<dl class="row table mb-0">
-
-								<dt class="col-sm-3"><div class="schedule-time font-primary">6.30 pm</div></dt>
-								<dd class="col-sm-9 d-flex justify-content-between align-items-center">
-									<div class="schedule-desc font-primary">Software development fair<small>- Jason Response</small></div>
-									<a href="#"><img src="images/huawei.jpg" alt="" class="schedule-teacher"></a>
-								</dd>
-
-								<dt class="col-sm-3"><div class="schedule-time font-primary">8:30 am</div></dt>
-								<dd class="col-sm-9 d-flex justify-content-between align-items-center">
-									<div class="schedule-desc font-primary">Festival<small>- Kruger Right Tours</small></div>
-									<a href="#"><img src="images/amazon.jpg" alt="" class="schedule-teacher"></a>
-								</dd>
-
-								<dt class="col-sm-3"><div class="schedule-time font-primary">12.30 pm</div></dt>
-								<dd class="col-sm-9 d-flex justify-content-between align-items-center">
-									<div class="schedule-desc font-primary">African Quisine Tasting<small>- Lebo the Chef</small></div>
-									<a href="#"><img src="images/lebo.webp" alt="" class="schedule-teacher"></a>
-								</dd>
-								<dt class="col-sm-3"><div class="schedule-time font-primary">12.00 am</div></dt>
-								<dd class="col-sm-9 d-flex justify-content-between align-items-center">
-									<div class="schedule-desc font-primary">Fitness Workshop<small>- Jillian Michaels</small></div>
-									<a href="#"><img src="images/jillian.webp" alt="" class="schedule-teacher"></a>
-								</dd>
-							</dl>
-						</div>
-					</div>
+				 <div class="bg-overlay d-none d-md-block" style="background:linear-gradient(to bottom, rgb(247, 247, 247) 0%, rgb(148, 145, 145) 70%)  no-repeat center right; background-size: cover; z-index: 0;"></div>
 				</div>
 			</div>
-		</div>
-	</div>
-	<!--Tickets-->
-	<div class="section section-price " id="tickets"  style="background: linear-gradient(to bottom, white 0%, rgb(41, 40, 40) 70%) left top; background-size: 100% 100%;margin-top:-5%; margin-bottom:-1%;">
-	<div class="container">
-		<div class="d-flex justify-content-between align-items-center mb-6">
-			<div class="heading-block border-bottom-0 mb-0" style="max-width: 700px">
-				<div class="fancy-title title-border mb-3"><h5 class="fw-normal color font-body text-uppercase ls-1">Best Price for Everyone</h5></div>
-				
-			</div>
-			
-		</div>
 
-		<div class="row">
-			<div class="col-md-4 mb-5">
-				<h2 class="fw-bold mb-2 text-transform-none" style="font-size: 42px; letter-spacing: -1px">Available <span>Tickets</span> </h2>
-				<p class="lead mb-4">At Favereet, you can choose from standard and vip tickets</p>
-			
-				<a href="#" class="btn rounded bg-color text-white shadow text-uppercase fw-semibold ls-1 py-3 px-4">Start Booking Today</a>
-			</div>
-			<div class="col-md-4 mb-5">
-				<div class="card pricing border-0 shadow text-center"style=" height:106%;">
-					<div class="card-body rounded pt-5 pb-0">
-						<img src="demos/yoga/images/yoga-icons/color/svg/mudra_surya.svg" class="mb-3" alt="" height="40">
-						<h3>Standard Ticket</h3>
-						<ul class="list-unstyled">
-							<li class="text-black-50 my-1">Physical Access</li>
-							<li class="text-black-50 my-1">Online Events</li>
-							<li class="text-black-50 my-1">Reminders Available</li>
-						</ul>
-						<h3 class="mb-3 h2 color">R69.99</h3>
-						
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 mb-4">
-				<div class="card pricing border-0 shadow text-center" style=" height:100%;">
-					<div class="card-body rounded pt-5 pb-0">
-						<img src="demos/yoga/images/yoga-icons/color/svg/mudra_anjali.svg" class="mb-3" alt="" height="40">
-						<h3>VIP Ticket</h3>
-						<ul class="list-unstyled">
-							<li class="text-black-50 my-1">Front Row Seats</li>
-							<li class="text-black-50 my-1">Physical Access</li>
-							<li class="text-black-50 my-1">Online Access</li>
-							<li class="text-black-50 my-1">Schedule Reminders</li>
-							<li class="text-black-50 my-1">Access to Event change</li>
-							<li class="text-black-50 my-1">Free Entrance to Competitions</li>	
-						</ul>
-						<h3 class="mb-3 h2">R219.99</h3>
-						
-					</div>
-				</div>
-			</div>
-		</div>
+		</section><!-- #content end -->
 
-		</div>
-	</div>
-
-<!-- Footer
-	============================================= -->
+    <!-- Footer -->
 	<footer id="footer" class="dark" >
 		<div class="container">
 
@@ -542,18 +383,13 @@
 			</div>
 		</div><!-- #copyrights end -->
 	</footer><!-- #footer end -->
-	
 
-</div><!-- #wrapper end -->
+    </div> <!--wrapper end-->
+  
+    <!-- Go To Top-->
 
-<!-- Go To Top
-============================================= -->
 <div id="gotoTop" class="uil uil-angle-up"></div>
-
-<!-- JavaScripts
-============================================= -->
-<script src="js/jquery.js"></script>
-<script src="js/functions.js"></script>
+    <!--Scripts-->
 
 <!-- Image Change JS -->
 <script src="js/components/event.move.js"></script>
@@ -568,26 +404,8 @@
 ============================================= -->
 <script src="js/jquery.js"></script>
 <script src="js/functions.js"></script>
-
-<script>
-
-
-	//Current Week
-	Date.prototype.getWeek = function(start) {
-		//Calcing the starting point
-		start = start || 0;
-		var today = new Date(this.setHours(0, 0, 0, 0));
-		var day = today.getDay() - start;
-		var date = today.getDate() - day;
-
-		// Grabbing Start/End Dates
-		var StartDate = new Date(today.setDate(date));
-		var EndDate = new Date(today.setDate(date + 6));
-		return [StartDate, EndDate];
-	}
-	var Dates = new Date().getWeek();
-	jQuery("#week-details").text(Dates[0].toLocaleDateString() + ' - '+ Dates[1].toLocaleDateString());
-</script>
+<script src="login.js"></script>
 
 </body>
+
 </html>
