@@ -1,4 +1,4 @@
-class User {
+class User{
   constructor(name, email, password) {
     this.name = name;
     this.email = email;
@@ -38,7 +38,7 @@ document.getElementById("signInForm").addEventListener("submit", function(event)
 
   sessionStorage.setItem('user', JSON.stringify(user));
 
-  window.location.href = "home.html";
+  window.location.href = "events.html";
 
 });
 

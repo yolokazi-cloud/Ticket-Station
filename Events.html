@@ -25,8 +25,9 @@
 	<link rel="stylesheet" href="css/components/bs-switches.css">
 
 	<!-- Niche Demos -->
-	<link rel="stylesheet" href="gym/gym.css">
-	<link rel="stylesheet" href="yoga/yoga.css">
+	<link rel="stylesheet" href="css/gym.css">
+	<link rel="stylesheet" href="css/yoga.css">
+	<link rel="stylesheet" href="css/crowdfunding.css">
 
 	<link rel="stylesheet" href="css/custom.css">		
 	<!-- Font Imports -->
@@ -38,8 +39,9 @@
 </head>
 <body class="stretched">
     <div id="wrapper">
-        <!-- Header-->
-	<header id="header" class="full-header transparent-header dark" data-sticky-class="not-dark" data-responsive-class="not-dark">
+       
+     <!-- Header-->
+	 <header id="header" class="full-header transparent-header dark" data-sticky-class="not-dark" data-responsive-class="not-dark">
 		<div id="header-wrap">
 			<div class="container">
 				<div class="header-row justify-content-lg-between">
@@ -57,12 +59,10 @@
 						<!-- Top Search
 						============================================= -->
 						<div id="top-search" class="header-misc-icon d-flex " >
-							<a href="#" id="top-search-trigger"style="margin-right: 90%;"><i class="uil uil-search"></i><i class="bi-x-lg"></i></a>
-							<a href="#"><i class="bi bi-person"style="margin-right: 120%;"></i></a>
+							<a href="index.html"><i class="bi bi-person"style="margin-right: 120%;"></i></a>
 						</div><!-- #top-search end -->
 
 					</div>
-
 					<div class="primary-menu-trigger">
 						<button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
 							<span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
@@ -70,55 +70,55 @@
 					</div>
 
 					<!-- Primary Navigation-->
-					<nav class="primary-menu">
+					<nav class="primary-menu" style="color: grey; align-items: center;justify-content: center;">
 
 						<ul class="menu-container border-end-0">
 							<li class="menu-item"><a class="menu-link" href="index.html"><div>Home</div></a></li>
-							
-								<ul class="sub-menu-container" data-class="up-lg:not-dark">
-									<li class="menu-item"><a class="menu-link" href="index.html"><div>About</div></a></li>
-									<li class="menu-item"><a class="menu-link" href="index.html"><div>Pricing</div></a></li>
-									<li class="menu-item"><a class="menu-link" href="index.html"><div>Contact</div></a></li>
-								</ul>
-							</li>
-							<li class="menu-item"><a class="menu-link" href="index.html"><div>Events</div></a></li>
-							<li class="menu-item"><a class="menu-link" href="index.html"><div>Pricing</div></a></li>
-							<li class="menu-item"><a class="menu-link" href="index.html"><div>Contact</div></a></li>
+							<li class="menu-item"><a class="menu-link" href="Events.html"><div>Events</div></a></li>
+							<li class="menu-item"><a class="menu-link" href="#footer"><div>Contact</div></a></li>
 						</ul>
 					</nav>
 
-					<form class="top-search-form">
-						<input type="text" name="q" onclick="searchEvent()" id="search-input" class="form-control" value="" placeholder="Type &amp; Enter.." autocomplete="off">						
+					<form class="top-search-form" action="search.html" method="get">
+						<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Enter.." autocomplete="off">
 					</form>
-
-					<div class="basket">
-						<div
-						  class="quantity total-items-in-cart"
-						  id="cartItemCount item-number"
-						>
-						  0
-						</div>
-						<img src="./images/cart.png" alt="" class="cart open-cart-btn" />
-					  </div>
 
 				</div>
 			</div>
 		</div>
 		<div class="header-wrap-clone"></div>
 	</header><!-- #header end -->
-    <section id="content" style="background: linear-gradient(to bottom, white 0%, rgb(41, 40, 40) 70%) left top; padding: 100px 0; background-size: 100% 100%">
-		<div class="content-wrap">
-			<div class="container">
-				<div class="fancy-title title-border">
-					<h3>Available Events</h3>
-				</div>
-				<div class="row justify-content-center col-mb-50 mb-0">
-               
+	<section id="content">
+		<div class="content-wrap pt-0">
+
+			<div class="section mt-0 overflow-visible">
+				<div class="container">
+					<div class="justify-content-center text-center position-relative" style="left:18%;">
+						<div class="col-lg-7">
+							<div class="heading-block border-bottom-0 mb-4">
+								<h2 class="mb-3"> Explore our Events</h2>
+								<p class="text-muted mb-0">You can select from various categories for an event that suits your need.</p>
+							</div>
+							<div class="searchField input-group input-group-lg mb-4">
+								<input type="text" id="searchField"  class="form-control w-auto" placeholder="Search Events" class="searchInputField">
+								<button class="searchBtn btn btn-secondary" onclick="searchEvent()">Search</button>
+							</div>
+							
+							
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-	</section>
 
+		<!--events-->
+		<div class="container">
+			<div class="row justify-content-center col-mb-50 mb-0">
+               
+			</div>
+	   </div>		
+
+	</div>
+</section>
 
 	 <!-- SIDE CART -->
 	 <div class="side-cart">
@@ -166,7 +166,7 @@
           </form>
         </div>
       </div>
-    </header>
+ 
 
     <!-- UPCOMING EVENTS -->
 
@@ -356,7 +356,7 @@
 ============================================= -->
 <script src="js/jquery.js"></script>
 <script src="js/functions.js"></script>
-<script src="js/events.js"></script>
+<script src="js/index.js"></script>
 </body>
 
 </html>

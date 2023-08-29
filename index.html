@@ -25,20 +25,16 @@
 	<link rel="stylesheet" href="css/components/bs-switches.css">
 
 	<!-- Niche Demos -->
-	<link rel="stylesheet" href="gym/gym.css">
-	<link rel="stylesheet" href="yoga/yoga.css">
-  
-    <link rel="shortcut icon" href="/assets/favicon.ico">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="law-firm/law-firm.css">
-
+	<link rel="stylesheet" href="css/gym.css">
+	<link rel="stylesheet" href="css/yoga.css">
+    <link rel="stylesheet" href="css/law-firm.css">
 	<link rel="stylesheet" href="css/custom.css">		
 	<!-- Font Imports -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Landing Page</title>
+    <title>FaveReet Ticket Station</title>
 </head>
 <body class="stretched">
     <div id="wrapper">
@@ -52,7 +48,7 @@
 					============================================= -->
 					<div id="logo" class="me-lg-0 border-end-0">
 						<a href="demo-gym.html">
-							<h1 class="mt-2" style="color: gray;">FaveReet</h1>
+							<h1 class="mt-2" style="color: gray;">FaveReet Ticket Station</h1>
 						</a>
 					</div><!-- #logo end -->
 
@@ -60,9 +56,8 @@
 
 						<!-- Top Search
 						============================================= -->
-						<div id="top-search" class="loginbtn " >
-				
-							<a href="login.html" class="loginbtn">Login</a>
+						<div id="top-search" class="header-misc-icon d-flex " >
+							<a href="login.html"><i class="bi bi-person"style="margin-right: 120%;"></i></a>
 						</div><!-- #top-search end -->
 
 					</div>
@@ -75,19 +70,12 @@
 
 					<!-- Primary Navigation-->
 					<nav class="primary-menu">
-
 						<ul class="menu-container border-end-0">
 							<li class="menu-item"><a class="menu-link" href="index.html"><div>Home</div></a></li>
 							<li class="menu-item"><a class="menu-link" href="#about"><div>About</div></a></li>
 							<li class="menu-item"><a class="menu-link" href="#contact"><div>Contact</div></a></li>
 						</ul>
 					</nav>
-
-					<form class="top-search-form" action="search.html" method="get">
-						<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Enter.." autocomplete="off">
-						
-					</form>
-
 				</div>
 			</div>
 		</div>
@@ -109,22 +97,17 @@
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide-bg" style="background:linear-gradient(0deg, rgba(36, 36, 36, 0.54),rgba(30, 29, 30, 0.69)), url('images/hero-index.jpg') no-repeat left top; padding: 100px 0; background-size: 100% 100%; margin-top:-10%;"></div>
+						<div class="swiper-slide-bg" style="background:linear-gradient(0deg, rgba(36, 36, 36, 0.54),rgba(30, 29, 30, 0.69)), url('images/e-new.jpg') no-repeat left top; padding: 100px 0; background-size: 100% 100%;"></div>
 					</div>
 				</div>
-			
-			</div>
 
-			<!-- Slider Mouse Icon
-			============================================= -->
-			<a href="#" class="scroll-down d-none d-lg-block" data-scrollto="#content" data-offset="80">
-				<span class="scroll-mouse"><span class="scroll-wheel"></span></span>
-			</a>
+			</div>
+			
 		</div>
 	
 		<!--about section-->
         </section>
-        <section id="about">
+        <section id="about" style="margin-top: 10%;">
             <div class="row align-items-center justify-content-center mt-6 mt-lg-0 mb-4">
                 <div class="col-lg-5 col-10 px-5">
                     <div class="lady-justice-img position-relative">
@@ -141,10 +124,51 @@
             </div>
         </section>
 
-		<!--contact-->
-        <section id="contact" style="margin-top: 10%; margin-bottom: -10%;">
+		<!--Tickets-->
+        <section id="contact" style="margin-top: 10%;margin-bottom: -10%;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 mb-5">
+					<h2 class="fw-bold mb-2 text-transform-none" style="font-size: 42px; letter-spacing: -1px">Available <span>Tickets</span> </h2>
+					<p class="lead mb-4">At Favereet, you can choose from standard or VIP ticket</p>
+				
+					<a href="#" class="btn rounded bg-color text-white shadow text-uppercase fw-semibold ls-1 py-3 px-4">Start Booking Today</a>
+				</div>
+				<div class="col-md-4 mb-5">
+					<div class="card pricing border-0 shadow text-center"style=" height:140%;">
+						<div class="card-body rounded pt-5 pb-0">
+							
+							<h3>Standard Ticket</h3>
+							<ul class="list-unstyled">
+								<li class="text-black-50 my-1">Physical Access</li>
+								<li class="text-black-50 my-1">Online Events</li>
+								<li class="text-black-50 my-1">Reminders Available</li>
+							</ul>	
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-4">
+					<div class="card pricing border-0 shadow text-center" style=" height:130%;">
+						<div class="card-body rounded pt-5 pb-0">
+							<img src="demos/yoga/images/yoga-icons/color/svg/mudra_anjali.svg" class="mb-3" alt="" height="40">
+							<h3>VIP Ticket</h3>
+							<ul class="list-unstyled">
+								<li class="text-black-50 my-1">Front Row Seats</li>
+								<li class="text-black-50 my-1">Physical Access</li>
+								<li class="text-black-50 my-1">Online Access</li>
+								<li class="text-black-50 my-1">Schedule Reminders</li>
+								<li class="text-black-50 my-1">Access to Event change</li>
+								<li class="text-black-50 my-1">Free Entrance to Competitions</li>	
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+		<!--contacts-->
 			<div class="content-wrap ">
-				<div class="section section-contact my-0" style="background: #ECEEED; padding: 100px 0;">
+				<div class="section section-contact " style="background: #ECEEED; padding: 100px 0;">
 					<div class="container">
 						<div class="row gutter-50">
 							<div class="col-xl-4 col-md-4">
@@ -239,7 +263,7 @@
 
     <!-- Footer -->
 	<footer id="footer" class="dark" >
-		<div class="container">
+		<div class="container" >
 
 			<!-- Footer Widgets
 			============================================= -->
@@ -374,24 +398,19 @@
 								<i class="fa-brands fa-linkedin"></i>
 							</a>
 						</div>
-
 						<i class="bi-envelope"></i> info@favereet.com <span class="middot">&middot;</span> <i class="fa-solid fa-phone"></i> +27-(011)-6541-6369 
 					</div>
-
 				</div>
-
 			</div>
 		</div><!-- #copyrights end -->
 	</footer><!-- #footer end -->
-
     </div> <!--wrapper end-->
-  
+	
     <!-- Go To Top-->
 
 <div id="gotoTop" class="uil uil-angle-up"></div>
-    <!--Scripts-->
-
-<!-- Image Change JS -->
+	<!--Scripts-->
+  <!-- Image Change JS -->
 <script src="js/components/event.move.js"></script>
 <script src="js/components/image-changer.js"></script>
 
@@ -400,12 +419,8 @@
 		jQuery(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
 	});
 </script>
-<!-- JavaScripts
-============================================= -->
-<script src="js/jquery.js"></script>
-<script src="js/functions.js"></script>
-<script src="login.js"></script>
 
+<script src="js/functions.js"></script>
 </body>
 
 </html>

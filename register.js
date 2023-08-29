@@ -66,7 +66,7 @@ document.getElementById("createAccount").addEventListener("submit", function(eve
         if(passwordone ===passwordtwo){
           console.log("passwords match");
           alert("Account Created!")
-          window.location.href = "home.html";
+          window.location.href = "register-confirm.html";
         }else {
         alert("Passwords do not match!");
           window.location.href = "register.html";
